@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatting Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="chat_section">
+        <div class="brand">
+            <img height="40" src="wassup.png" alt="">
+            <h1>Let's Chat</h1>
+        </div>
+
+        <div class="message__area">
+
+        </div>
+        <div class="message__input">
+            <textarea id="textarea" cols="100" rows="1" placeholder="Write a message"></textarea>
+            <button id="emojiButton">😊</button> 
+            <button id="sendButton">Send</button>
+        </div>
+
+      
+        <div id="emojiPicker" style="display: none;">
+            <button class="emoji" onclick="addEmoji('😊')">😊</button>
+            <button class="emoji" onclick="addEmoji('😍')">😍</button>
+            <button class="emoji" onclick="addEmoji('😎')">😎</button>
+            <button class="emoji" onclick="addEmoji('😜')">😜</button>
+            <button class="emoji" onclick="addEmoji('😘')">😘</button>
+            <button class="emoji" onclick="addEmoji('😋')">😋</button>
+            <button class="emoji" onclick="addEmoji('😍')">😍</button>
+            <button class="emoji" onclick="addEmoji('😇')">😇</button>
+            <button class="emoji" onclick="addEmoji('🎉')">🎉</button>
+            <button class="emoji" onclick="addEmoji('💖')">💖</button>
+            <button class="emoji" onclick="addEmoji('🌟')">🌟</button>
+            <button class="emoji" onclick="addEmoji('✨')">✨</button>
+            <button class="emoji" onclick="addEmoji('💫')">💫</button>
+            <button class="emoji" onclick="addEmoji('💎')">💎</button>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
